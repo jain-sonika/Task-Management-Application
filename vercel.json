@@ -1,0 +1,12 @@
+{
+  "buildCommand": "npm run build && npx msw init public/ --save",
+  "outputDirectory": "dist",
+  "installCommand": "npm install",
+  "devCommand": "npm run dev",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
